@@ -4,7 +4,6 @@
 <!-- image-button -->
 <?php include 'image-button.php'; ?>
 <!-- /. image-button -->
-<div style="margin-bottom: 25vw;"></div>
 <!-- slider -->
 <?php include 'slider.php'; ?>
 <!-- /. slider -->
@@ -12,12 +11,20 @@
 <?php include 'contact.php'; ?>
 <!-- /. contact -->
 <!-- recommand products -->
-<?php include 'product-random.php'; ?>
-<?php include 'product-recommend.php'; ?>
-<?php include 'product-100k.php'; ?>
-<?php include 'product-10k.php'; ?>
-<?php include 'product-1k.php'; ?>
-<!-- /.recommand products -->
+<?php include 'product-random-v2.php'; ?>
+<!-- recommand products -->
+<div style="margin-bottom: 100px;"></div>
+<!-- product-1k-v2 -->
+<?php include 'product-1k-v2.php'; ?>
+<!-- product-1k-v2 -->
+<div style="margin-bottom: 100px;"></div>
+<!-- product-10k-v2 -->
+<?php include 'product-10k-v2.php'; ?>
+<!-- product-10k-v2 -->
+<div style="margin-bottom: 100px;"></div>
+<!-- product-100k-v2 -->
+<?php include 'product-100k-v2.php'; ?>
+<!-- product-100k-v2 -->
 <!-- footer -->
 <?php include 'footer.php'; ?>
 <!-- /.footer -->

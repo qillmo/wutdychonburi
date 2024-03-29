@@ -84,42 +84,6 @@
             max-width: 115px;
             /* ปรับขนาดตามต้องการ */
         }
-
-        /* body {
-        background-image: url('./pic/bg_gradient_short.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        opacity: 1;
-    } */
-
-        /* body {
-            position: relative;
-            margin: 0;
-            padding: 0;
-        }
-
-        body::before,
-        body::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0.2;
-        }
-
-        body::before {
-            background-image: url('./pic/bg_gradient_short.jpg');
-        }
-
-        body::after {
-            content: none;
-        } */
     </style>
 </head>
 

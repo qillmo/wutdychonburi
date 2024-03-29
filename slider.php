@@ -1,7 +1,7 @@
 <!-- slider -->
 <div class="container">
   <div class="slider">
-    <div class="owl-carousel owl-one owl-theme">
+    <div class="owl-carousel owl-one">
       <?php
       $servername = "localhost";
       $username = "root";
@@ -37,5 +37,23 @@
     </div>
   </div>
 </div>
-
 <!-- /slider -->
+
+<!-- Include Owl Carousel library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Script to initialize Owl Carousel -->
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 5000, // Change image every 5 seconds
+      autoplayHoverPause: true
+    });
+  });
+</script>

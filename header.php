@@ -10,101 +10,69 @@
     <meta name="keywords" content="ecommerce website templates, online store," />
     <title>Wutdychonburi.com เว็บ วุดดี้ชลบุรี ซื้อขายพระเครื่องของวุดดี้ชลบุรี</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet" />
-    <!-- owl-carousel -->
-    <link href="css/owl.carousel.css" rel="stylesheet" />
-    <link href="css/owl.theme.default.css" rel="stylesheet" />
     <!-- FontAwesome CSS -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet" />
-    <style>
-        .pagination {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .pagination a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            margin: 0 5px;
-            border: 1px solid white;
-            border-radius: 5px;
-            background-color: #007bff;
-            transition: background-color 0.3s;
-        }
-
-        .pagination a:hover {
-            background-color: #0056b3;
-        }
-
-        .product-image {
-            max-width: 100%;
-            /* ปรับให้รูปภาพของ product-image ไม่เกินขอบ */
-        }
-
-        .badge-gif {
-            max-width: 100%;
-            /* ปรับให้รูปภาพของ badge-gif ไม่เกินขอบ */
-        }
-
-        .badge-gif {
-            position: absolute;
-            top: 10;
-            left: 10;
-            /* max-width: 50px; */
-            /* ปรับขนาดตามต้องการ */
-            max-height: 50px;
-            /* ปรับขนาดตามต้องการ */
-        }
-
-        .product-image {
-            max-width: 115px;
-            /* ปรับขนาดตามต้องการ */
-        }
-
-        body {
-            position: relative;
-            margin: 0;
-            padding: 0;
-        }
-
-        body::before,
-        body::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0.2;
-            /* ปรับความทึบตามที่คุณต้องการ */
-        }
-
-        body::before {
-            background-image: url('./pic/bg_gradient_short.jpg');
-        }
-
-        body::after {
-            content: none;
-            /* ไม่ต้องแสดงรูปภาพที่อยู่หลัง  */
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+<style>
+    .navigation {
+        max-width: 1300px;
+        background-color: #000;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .navigation-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .navigation-item span {
+        font-family: "Kanit", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.9rem;
+    }
+
+    .navigation-item span a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navigation-item span a:hover {
+        color: red;
+    }
+
+    .navigation-item {
+        align-self: center;
+        text-align: center;
+    }
+
+    .navigation-contact img {
+        width: 25px;
+        padding: 1px;
+        background-color: #fff;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .navigation-item span {
+            font-family: "Kanit", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 0.6rem;
+        }
+    }
+</style>
 
 <body>
     <!-- navigation -->
-    <div class="navigation">
+    <!-- <div class="navigation">
         <div class="container">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-8">
                 <div>
@@ -112,7 +80,6 @@
                     </a>
                 </div>
             </div>
-            <!-- /.logo -->
             <div id="navigation">
                 <ul>
                     <li class="active"><a href="index.php">หน้าแรก</a></li>
@@ -122,5 +89,21 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- navigation -->
+    <div class="navigation">
+        <div class="navigation-container">
+            <div class="navigation-item">
+                <a href="index.php"><img src="./pic/wutdy_logo.png" alt="" style="width: 80px" /></a>
+            </div>
+            <div class="navigation-item"><span><a href="index.php">หน้าแรก</a></span></div>
+            <div class="navigation-item" style="margin-left: -10px;"><span><a href="rules.php" target="_blank">กฎกติกา</a></span></div>
+            <div class="navigation-item"><span><a href="howto-buy-amulets.php" target="_blank">วิธีการเช่าพระ</a></span></div>
+            <div class="navigation-item"><span><a href="check-parcel.php" target="_blank">ตรวจสอบพัสดุ</a></span></div>
+            <div class="navigation-item">
+                <div class="navigation-contact"><a href="index.php"><img src="./pic/line.png" alt="" /></a></div>
+                <div class="navigation-contact"><a href="index.php"><img src="./pic/facebook.png" alt="" /></a></div>
+                <div class="navigation-contact"><a href="index.php"><img src="./pic/tiktok.png" alt="" /></a></div>
+            </div>
+        </div>
+    </div>
